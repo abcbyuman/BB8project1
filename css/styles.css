@@ -16,12 +16,28 @@
 /* Student-Made Styles */
 .ISProgramForm
 {
-  background-color: rgb(255, 255, 255, .55);
+  background-color: rgb(255, 255, 255, .50);
   border-radius: 35px;
   backdrop-filter: blur(10px);
   filter: drop-shadow(0px 1px 3px rgb(0, 0, 0, .555));
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+.CircleArea
+{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255, .40);
+  border-radius: 35px;
+  backdrop-filter: blur(10px);
+}
 
 
 :root {
@@ -11700,9 +11716,11 @@ body {
 .contact-section {
   padding-top: 5rem;
 }
+
+/* EDITED THIS */
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #044483;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
