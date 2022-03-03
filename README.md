@@ -2,7 +2,7 @@
 Repo for bb8 project 1 assignment
 
 Austin - 
-Forms
+
 
 
 Ella - 
@@ -10,7 +10,7 @@ Ella -
 
 
 Mitch - 
-Calc GPA Function
+
 
 
 Wade - 
@@ -18,7 +18,6 @@ Wade -
 
 
 David - 
-
 
 
 - Forms
@@ -53,7 +52,7 @@ The last 30 GPA credits is worth 20%"
  
  
  
-- Reset function
+- Reset Button
 
  "Remember the following grade associations:
 A = 4
