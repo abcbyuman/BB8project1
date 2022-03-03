@@ -22,7 +22,7 @@
 
 //Focus on the IS201 dropdown
 function focus201() {
-    document.getElementById("is201").focus();
+    document.getElementById("IS201grade").focus();
 }
 
 
@@ -59,8 +59,6 @@ function resetAll()
 
     // focusing on IS201
     document.getElementById("IS201grade").focus();
-
-    focus201();
 }
 
 
