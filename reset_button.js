@@ -20,12 +20,16 @@
 // clear the output GPA, clear the overall GPA and the last 30 credits GPA, reset all drop downs to A's
 // and the checkboxes to false (empty), and then set focus to the IS202 drop down.
 
+//Focus on the IS201 dropdown
+function focus201() {
+    document.getElementById("is201").focus();
+}
 
 
-function reset()
+function resetAll()
 {
     // focusing on IS201
-    document.getElementById("IS201").focus();
+    document.getElementById("IS201grade").focus();
 
     // destroying the circle
     document.getElementById("Circle").style.display = "none";
@@ -41,11 +45,11 @@ function reset()
     document.getElementById("Last30CreditsGPA").value = "";
 
     // resetting all the dropdowns to A
-    document.getElementById("IS201").options.reset;
+    document.getElementById("IS201grade").options.reset;
     document.getElementById("IS303_CS142").options.reset;
     document.getElementById("ACC200").options.reset;
 
-    document.getElementById("IS201").value = "";
+    document.getElementById("IS201grade").value = "";
     document.getElementById("IS303_CS142").value = "";
     document.getElementById("ACC200").value = "";
 
@@ -54,7 +58,9 @@ function reset()
     // this should happen when you press the reset button
 
     // focusing on IS201
-    document.getElementById("IS201").focus();
+    document.getElementById("IS201grade").focus();
+
+    focus201();
 }
 
 
