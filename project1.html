@@ -106,7 +106,7 @@
                         
                         
                         
-                          <span style="color: white; font-size: 22px; vertical-align: bottom;">IS 201</span>
+                          <span class="pCustom">IS 201</span>
                           <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="IS201grade" id="IS201grade">
                             <option>A</option>
                             <option>A-</option>
@@ -121,14 +121,14 @@
                             <option>D-</option>
                             <option>E</option>
                           </select>
-                          &nbsp
+                          &nbsp;
                           <input class="form-check-input" type="checkbox" style="border-radius: 10px; margin-top: 5px;" name="retake" value="Retake">
-                          <span style="color: white; font-size: 20px; vertical-align: bottom;">Retake?</span>
+                          <span class="pCustom">Retake?</span>
                           
                           <br>
                           <br>
 
-                          <span style="color: white; font-size: 22px; vertical-align: bottom;">IS 303/CS 142</span>
+                          <span class="pCustom">IS 303/CS 142</span>
                           <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="IS303grade" id="IS303grade" autofocus>
                             <option>A</option>
                             <option>A-</option>
@@ -143,14 +143,14 @@
                             <option>D-</option>
                             <option>E</option>
                           </select>
-                          &nbsp
+                          &nbsp;
                           <input class="form-check-input" type="checkbox" style="border-radius: 10px; margin-top: 5px;" name="retake" value="Retake">
-                          <span style="color: white; font-size: 20px; vertical-align: bottom;">Retake?</span>
+                          <span class="pCustom">Retake?</span>
 
                           <br>
                           <br>
 
-                          <span style="color: white; font-size: 22px; vertical-align: bottom;">ACC 200</span>
+                          <span class="pCustom">ACC 200</span>
                           <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="ACC200grade" id="ACC200grade" autofocus>
                             <option>A</option>
                             <option>A-</option>
@@ -165,40 +165,45 @@
                             <option>D-</option>
                             <option>E</option>
                           </select>
-                          &nbsp
+                          &nbsp;
                           <input class="form-check-input" type="checkbox" style="border-radius: 10px; margin-top: 5px;" name="retake" value="Retake">
-                          <span style="color: white; font-size: 20px; vertical-align: bottom;">Retake?</span>
+                          <span class="pCustom">Retake?</span>
                           
                           <br>
                           <br>
                           <br>
 
-                          <span style="color: white; font-size: 22px; vertical-align: bottom;">BYU Overall GPA: </span>
+                          <span class="pCustom">BYU Overall GPA: </span> &nbsp;
                           <input class="form-control" id="OverallGPA" name="OverallGPA" placeholder="GPA..." style="height: 50px; width: 115px; float: right; margin-right: 160px; margin-top: -7px;" autofocus/>
                           
                           <br>
                           <br>
                           <br>
 
-                          <span style="color: white; font-size: 22px; vertical-align: bottom;">BYU Last 30 Credits GPA: </span>
+                          <span class="pCustom">BYU Last 30 Credits GPA: </span>
                           <input class="form-control" id="Last30CreditsGPA" name="Last30CreditsGPA" placeholder="GPA..." style="height: 50px; width: 115px; float: right; margin-right: 75px; margin-top: -7px;" autofocus/>
-                          
+                            <br>
+                            <br>
+                            <br>
 
+                          <!-- BUTTON TO CALCULATE GPA -->
+                          <button type="reset" class="btn btn-primary" onclick="calculateGPA();">Calculate</button>
+                            <br>
+                            <br>
+
+                          <!-- RESET BUTTON -->
+                          <button type="reset" class="btn btn-primary" onclick="resetAll();">Reset</button>
                             <br>
                             <br>
                             <br>
-                            <br>
-                            <br>
-                            <!-- BUTTON TO CALCULATE GPA -->
-                            <button type="reset" class="btn btn-primary" onclick="calculateGPA();">Calculate</button>
-                            <br>
-                            <br>
-                            <!-- RESET BUTTON -->
-                            <button type="reset" class="btn btn-primary" onclick="resetAll();">Reset</button>
-                            <br>
-                            <br>
-                            <br>
+
+                          <p class="pCustom">Calculated GPA: </p>
+                          <div class="center CalcGPAArea">
+                            <p id="calcGPA"></p>
+                          </div>
+                          <p class="pCustom">Circle: </p>
                           <div class="center CircleArea">
+                            <span id="circle"></span>
                           </div>
                           <hr>
 

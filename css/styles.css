@@ -22,11 +22,28 @@
   filter: drop-shadow(0px 1px 3px rgb(0, 0, 0, .555));
 }
 
+.pCustom
+{
+  color: white;
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
 .center {
   margin: auto;
   width: 50%;
   /* border: 3px solid green; */
   padding: 10px;
+}
+
+.CalcGPAArea
+{
+  height: 60px;
+  width: 300px;
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255, .40);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
 }
 
 .CircleArea
