@@ -21,6 +21,7 @@ David -
 
 
 - Forms
+
  "On this page you will have the following inputs in the html form.
 
 NOTE: Default the drop downs to A’s and the retake checkbox to false (empty). Do this for all of the drop downs and checkboxes.
@@ -36,6 +37,7 @@ Try to make the input area look very nice and clean."
 
 
 - Calc GPA function
+
  "If the user clicks on the Calculate button, then you should call a JavaScript function called calcGPA() and calculate the GPA using the following information:
 
 IS 201 is worth 30%
@@ -51,6 +53,7 @@ The last 30 GPA credits is worth 20%"
  
  
 - Reset Button
+
  "Remember the following grade associations:
 A = 4
 A- = 3.7
