@@ -74,15 +74,71 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <select style="width: 155px; height: 40px; font-size: 20px; text-align: center;" name="whichDonut">
-                                <option>Apple Fritter</option>
-                                <option>Chocolate</option>
-                                <option>Glazed</option>
+                        <form method="post" action="http://3.83.223.159">
+                            
+                           IS 201: <select name="is201"> 
+                                <option>A</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>B-</option>
+                                <option>C+</option>
+                                <option>C</option>
+                                <option>C-</option>
+                                <option>D+</option>
+                                <option>D</option>
+                                <option>D-</option>
+                                <option>E</option>
                             </select>
+                            <input type="checkbox" name="retake" value="Retake"> Retake
+                            <br><br>
+                            IS 303/CS 142: <select name="is201"> 
+                                <option>A</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>B-</option>
+                                <option>C+</option>
+                                <option>C</option>
+                                <option>C-</option>
+                                <option>D+</option>
+                                <option>D</option>
+                                <option>D-</option>
+                                <option>E</option>
+                            </select>
+                            <input type="checkbox" name="retake" value="Retake"> Retake
+                            <br><br>
+                            ACC 200: <select name="is201"> 
+                                <option>A</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>B-</option>
+                                <option>C+</option>
+                                <option>C</option>
+                                <option>C-</option>
+                                <option>D+</option>
+                                <option>D</option>
+                                <option>D-</option>
+                                <option>E</option>
+                            </select>
+                            <input type="checkbox" name="retake" value="Retake"> Retake
+                            <br><br>
+                            <label for="byuGPA">BYU Overall GPA: </label><input type="text" name="byuGPA" id="byuGPA" maxlength="5">
+                            <br><br>
+                            <label for="byuLast30">BYU Last 30 Credits GPA: </label><input type="text" name="byuLast30" id="byuLast30" maxlength="5">
+                    
+                            <br><br>
+                            <button type="calculate">Calculate</button>
+                            <br><br>
+                            <button type="reset">Reset</button>
+                        
+                    
+                        </form>
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            
 
-                            <input class="checkbox" style="width: 40px; height: 40px;" type="checkbox" name="retake" value="Retake"> <span style="color: white; font-size: 20px;">Retake?</span>
+                           
                             
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
