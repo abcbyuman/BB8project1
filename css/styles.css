@@ -18,7 +18,6 @@
 
 
 
-
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -2490,7 +2489,7 @@ textarea.form-control-lg {
 .form-check-input {
   width: 1em;
   height: 1em;
-  margin-top: 0.25em;
+  /* margin-top: 0.25em; */
   vertical-align: top;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -11575,7 +11574,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 100, 200, 0.3) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/BYU_N._Eldon_Tanner_Building_\(TNRB\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11586,7 +11585,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -11654,7 +11653,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/TNRB_Interior3.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
