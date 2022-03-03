@@ -21,7 +21,6 @@
 // and the checkboxes to false (empty), and then set focus to the IS202 drop down.
 
 
-<button type="reset">Reset</button> // this is most of what we need to do right here
 
 function reset()
 {
