@@ -69,6 +69,7 @@ When the page is first displayed (or loaded) or if the user clicks on the RESET 
 When the user clicks on the RESET button you should call a JavaScript function called clearCircle() and clear the circle (style.display = "none" and style.fill = "none" for the element), clear the output GPA, clear the overall GPA and the last 30 credits GPA, reset all drop downs to A's and the checkboxes to false (empty), and then set focus to the IS202 drop down.
 
 
-- 
+- Must Select An Item alert
+ Make sure the user has selected a value for each of the drop down list boxes and that a value (don't worry about numeric vs non-numeric) for the overall and last 30 credit GPAs. If they did not enter everything display an alert that says, "You must select an item in each drop down and enter a value in the GPA text boxes!" and set the focus to the IS 201 drop down list box.
 
 
