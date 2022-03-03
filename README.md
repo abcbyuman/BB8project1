@@ -1,7 +1,7 @@
 # BB8project1
 Repo for bb8 project 1 assignment
 
-Austin - 
+Austin - Forms
 
 
 
@@ -9,7 +9,7 @@ Ella -
 
 
 
-Mitch - 
+Mitch - Calc Function
 
 
 
@@ -20,7 +20,7 @@ Wade -
 David - Reset Button
 
 
-- Forms
+- Forms: Austin
 
  "On this page you will have the following inputs in the html form.
 
@@ -36,7 +36,7 @@ Button that says RESET
 Try to make the input area look very nice and clean."
 
 
-- Calc GPA function
+- Calc GPA function: Mitch
 
  "If the user clicks on the Calculate button, then you should call a JavaScript function called calcGPA() and calculate the GPA using the following information:
 
@@ -52,7 +52,7 @@ The last 30 GPA credits is worth 20%"
  
  
  
-- Reset Button
+- Reset Button: David
 
  "Remember the following grade associations:
 A = 4
