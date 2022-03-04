@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Project 1</title>
+        <title>IS 303 | Project 1</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
@@ -17,16 +18,22 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- code from me for testing -->
+        <script src="reset_button.js"></script>
     </head>
-    <body id="page-top">
+    <body id="page-top" onload="focus201();">
 
 
         
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Project 1</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#page-top">IS 303 | Project 1</a>
+                <a href="https://marriottschool.byu.edu/infosys/">
+                  <img style="width: 150px; height: 55.5px;" src="assets/img/msb_logo_primary_left_white.svg"></img>
+                </a>
+                <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
@@ -36,7 +43,7 @@
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </nav>
 
@@ -45,28 +52,50 @@
 
 
         <!-- Masthead-->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Project 1</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">IS 303 | Section: 002</h2>
+                        <h1 class="mx-auto my-0 text-uppercase" style="text-shadow: 0px 3px 4px rgb(0, 0, 0, .25);">Project 1</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5" style="text-shadow: 0px 0px rgb(255, 255, 255, .35);">IS 303 | Section: 002</h2>
                         <a class="btn btn-primary" href="#signup">Get Started</a>
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->
 
 
 
 
         <!-- Inputs -->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
+        <section class="signup-section" id="signup" style="text-shadow: 0px 2px 3px rgb(0, 0, 0, .7);">
+            <div class="container px-4 px-lg-5" >
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Will You Get Into IS?</h2>
+                      <form class="form-signup ISProgramForm" id="contactForm">  
+                        <br>
+                        <br>
+                        <!-- <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="85" height="85"
+                        viewBox="0 0 50 50"
+                          style=" fill:#ffffff; filter: drop-shadow(0px 1px 3px rgb(0, 0, 0, .555));"><path d="M 14 4 C 8.4886661 4 4 8.4886661 
+                          4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661
+                          41.511334 4 36 4 L 14 4 z M 14 6 L 36 6 C 40.430666 6 44 9.5693339 44 14 L 44 36 C 44 40.430666 40.430666
+                          44 36 44 L 14 44 C 9.5693339 44 6 40.430666 6 36 L 6 14 C 6 9.5693339 9.5693339 6 14 6 z M 18 9 C 15.250484 9 13 11.250484
+                          13 14 L 13 36 C 13 38.749516 15.250484 41 18 41 L 32 41 C 34.749516 41 37 38.749516 37 36 L 37 14 C 37 11.250484 34.749516
+                          9 32 9 L 18 9 z M 18 11 L 32 11 C 33.668484 11 35 12.331516 35 14 L 35 36 C 35 37.668484 33.668484 39 32 39 L 18 39 C 16.331516
+                          39 15 37.668484 15 36 L 15 14 C 15 12.331516 16.331516 11 18 11 z M 18 13 C 17.448 13 17 13.448 17 14 L 17 18 C 17 18.552 17.448
+                          19 18 19 L 32 19 C 32.552 19 33 18.552 33 18 L 33 14 C 33 13.448 32.552 13 32 13 L 18 13 z M 19 21 A 2 2 0 0 0 19 25 A 2 2 0 0 0 19 21
+                          z M 25 21 A 2 2 0 0 0 25 25 A 2 2 0 0 0 25 21 z M 31 21 A 2 2 0 0 0 31 25 A 2 2 0 0 0 31 21 z M 19 27 A 2 2 0 0 0 19 31 A 2 2 0 0 0 19
+                          27 z M 25 27 A 2 2 0 0 0 25 31 A 2 2 0 0 0 25 27 z M 31 27 A 2 2 0 0 0 31 31 A 2 2 0 0 0 31 27 z M 19 33 C 17.895 33 17 33.895 17 35 C
+                          17 36.105 17.895 37 19 37 L 25 37 C 26.105 37 27 36.105 27 35 C 27 33.895 26.105 33 25 33 L 19 33 z M 31 33 A 2 2 0 0 0 31 37 A 2 2 0 0 0 31 33 z"></path>
+                        </svg>
+                        <!-- <img style="text-shadow: none;" src="https://img.icons8.com/ios-filled/100/ffffff/apple-calculator.png"/> -->
+                        <br>
+                        <h2 class="text-white mb-5">Will You Get Into the IS Program?</h2>
+                        <hr>
+                        <br>
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -75,67 +104,109 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <select style="width: 155px; height: 40px; font-size: 20px; text-align: center;" name="whichDonut">
-                                <option>Apple Fritter</option>
-                                <option>Chocolate</option>
-                                <option>Glazed</option>
-                            </select>
+                        
+                        
+                          <span class="pCustom">IS 201</span>
+                          <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="IS201grade" id="IS201grade">
+                            <option>A</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>B-</option>
+                            <option>C+</option>
+                            <option>C</option>
+                            <option>C-</option>
+                            <option>D+</option>
+                            <option>D</option>
+                            <option>D-</option>
+                            <option>E</option>
+                          </select>
+                          &nbsp;
+                          <input class="form-check-input" type="checkbox" style="border-radius: 10px; margin-top: 5px;" name="retake" value="Retake">
+                          <span class="pCustom">Retake?</span>
+                          
+                          <br>
+                          <br>
 
-                            <input class="checkbox" style="width: 40px; height: 40px;" type="checkbox" name="retake" value="Retake"> <span style="color: white; font-size: 20px;">Retake?</span>
-                            
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
-                        <br />
-                        <br />
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                          <span class="pCustom">IS 303/CS 142</span>
+                          <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="IS303grade" id="IS303grade" autofocus>
+                            <option>A</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>B-</option>
+                            <option>C+</option>
+                            <option>C</option>
+                            <option>C-</option>
+                            <option>D+</option>
+                            <option>D</option>
+                            <option>D-</option>
+                            <option>E</option>
+                          </select>
+                          &nbsp;
+                          <input class="form-check-input" type="checkbox" style="border-radius: 10px; margin-top: 5px;" name="retake" value="Retake">
+                          <span class="pCustom">Retake?</span>
+
+                          <br>
+                          <br>
+
+                          <span class="pCustom">ACC 200</span>
+                          <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="ACC200grade" id="ACC200grade" autofocus>
+                            <option>A</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>B-</option>
+                            <option>C+</option>
+                            <option>C</option>
+                            <option>C-</option>
+                            <option>D+</option>
+                            <option>D</option>
+                            <option>D-</option>
+                            <option>E</option>
+                          </select>
+                          &nbsp;
+                          <input class="form-check-input" type="checkbox" style="border-radius: 10px; margin-top: 5px;" name="retake" value="Retake">
+                          <span class="pCustom">Retake?</span>
+                          
+                          <br>
+                          <br>
+                          <br>
+
+                          <span class="pCustom">BYU Overall GPA: </span> &nbsp;
+                          <input class="form-control" id="OverallGPA" name="OverallGPA" placeholder="GPA..." style="height: 50px; width: 115px; float: right; margin-right: 160px; margin-top: -7px;" autofocus/>
+                          
+                          <br>
+                          <br>
+                          <br>
+
+                          <span class="pCustom">BYU Last 30 Credits GPA: </span>
+                          <input class="form-control" id="Last30CreditsGPA" name="Last30CreditsGPA" placeholder="GPA..." style="height: 50px; width: 115px; float: right; margin-right: 75px; margin-top: -7px;" autofocus/>
+                            <br>
+                            <br>
+                            <br>
+
+                          <!-- BUTTON TO CALCULATE GPA -->
+                          <button type="reset" class="btn btn-primary" onclick="calculateGPA();">Calculate</button>
+                            <br>
+                            <br>
+
+                          <!-- RESET BUTTON -->
+                          <button type="reset" class="btn btn-primary" onclick="resetAll();">Reset</button>
+                            <br>
+                            <br>
+                            <br>
+
+                          <p class="pCustom">Calculated GPA: </p>
+                          <div class="center CalcGPAArea">
+                            <p id="calcGPA"></p>
+                          </div>
+                          <p class="pCustom">Circle: </p>
+                          <div class="center CircleArea">
+                            <span id="circle"></span>
+                          </div>
+                          <hr>
+
                         </form>
                     </div>
                 </div>
@@ -147,24 +218,29 @@
 
         <!-- Contact-->
         <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
+          <hr>
+          <hr>
+          <hr>
+          <hr>
+
+            <div class="container px-4 px-lg-5" style="margin: auto;">
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Group Members</h4>
-                                <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">
-                                David Murdock<br>
-                                Austin Cox<br>
-                                Ella Hansen<br>
-                                Mitch Anderson<br>
-                                Wade Holmstead<br>
-                            </div>
+                    <div class="card py-5 h-100">
+                        <div class="card-body text-center">
+                            <span class="material-icons" style="color: #044483;">groups</span>                                  
+                            <h4 class="text-uppercase m-0">Group Members</h4>
+                            <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50" style="margin: auto;">
+                            David Murdock,
+                            Austin Cox,
+                            Ella Hansen,
+                            Mitch Anderson, 
+                            and 
+                            Wade Holmstead,
                         </div>
                     </div>
                 </div>
+              </div>
     <!--
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
@@ -213,7 +289,11 @@
 
         
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Team BB8 2022</div></footer>
+        <footer class="footer bg-black small text-center text-white-50">
+          <div class="container px-4 px-lg-5">Copyright &copy; Team BB8 2022</div>
+          <a href="https://icons8.com/icon/ujRmpOIupIsv/calculator">Calculator icon by Icons8</a>
+        </footer>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

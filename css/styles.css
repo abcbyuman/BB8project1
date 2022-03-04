@@ -14,9 +14,47 @@
 
 
 /* Student-Made Styles */
+.ISProgramForm
+{
+  background-color: rgb(255, 255, 255, .50);
+  border-radius: 35px;
+  backdrop-filter: blur(10px);
+  filter: drop-shadow(0px 1px 3px rgb(0, 0, 0, .555));
+}
 
+.pCustom
+{
+  color: white;
+  font-size: 20px;
+  vertical-align: bottom;
+}
 
+.center {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
 
+.CalcGPAArea
+{
+  height: 60px;
+  width: 300px;
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255, .40);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.CircleArea
+{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255, .40);
+  border-radius: 35px;
+  backdrop-filter: blur(10px);
+}
 
 
 :root {
@@ -2490,7 +2528,7 @@ textarea.form-control-lg {
 .form-check-input {
   width: 1em;
   height: 1em;
-  margin-top: 0.25em;
+  /* margin-top: 0.25em; */
   vertical-align: top;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -2506,6 +2544,8 @@ textarea.form-control-lg {
 .form-check-input[type=checkbox] {
   color: #fff;
   border-radius: 0.25em;
+  width: .01%;
+  height: 50%;
 }
 .form-check-input[type=radio] {
   border-radius: 50%;
@@ -2514,13 +2554,17 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #b2d0ce;
+  border-color: rgb(4, 68, 131, .75);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(100, 161, 157, 0.25);
+  border-width: 2.5px;
+  /* filter: drop-shadow(3px, 3px, 0px, rgba(4, 68, 131, 1)); */
+  /* box-shadow: 0 0 0 0.25rem rgba(4, 68, 131, 0.25); */
 }
+
+/* EDITED THESE */
 .form-check-input:checked {
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #044483;
+  border-color: #044483;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -2529,8 +2573,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #002e5d;
+  border-color: #002e5d;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -3042,7 +3086,7 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
-
+/* 
 .btn-primary {
   color: #fff;
   background-color: #64a19d;
@@ -3052,27 +3096,42 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #558985;
   border-color: #50817e;
+} */
+
+/* EDITED THE BUTTON COLOR */
+.btn-primary {
+  color: #fff;
+  font-weight: bolder;
+  background-color: #002e5d;
+  border-color: #002e5d;
+  border-radius: 35px;
 }
+.btn-primary:hover {
+  color: #002e5d;
+  background-color: #fff;
+  border-color: #fff;
+}
+
 
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
-  box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
+  background-color: #002e5d;
+  border-color: #002e5d;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 153 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #50817e;
-  border-color: #4b7976;
+  background-color: #002e5d;
+  border-color: #002e5d;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #002e5d;
+  border-color: #002e5d;
 }
 
 .btn-secondary {
@@ -3123,16 +3182,16 @@ textarea.form-control-lg {
 }
 .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
   color: #000;
-  background-color: #85ceb0;
-  border-color: #76c8a6;
+  background-color: #002e5d;
+  border-color: #002e5d;
 }
 .btn-check:checked + .btn-success:focus, .btn-check:active + .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus, .show > .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(88, 165, 133, 0.5);
 }
 .btn-success:disabled, .btn-success.disabled {
   color: #000;
-  background-color: #67c29c;
-  border-color: #67c29c;
+  background-color: #002e5d;
+  border-color: #002e5d;
 }
 
 .btn-info {
@@ -11575,7 +11634,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 100, 200, 0.3) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/BYU_N._Eldon_Tanner_Building_\(TNRB\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11586,7 +11645,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -11654,7 +11713,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/TNRB_Interior3.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11674,9 +11733,11 @@ body {
 .contact-section {
   padding-top: 5rem;
 }
+
+/* EDITED THIS */
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #044483;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
