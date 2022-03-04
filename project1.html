@@ -665,6 +665,16 @@
         document.getElementById('calcGPA').innerHTML=fTotalGPA
       }
       
+          function MissingInfoAlert() {
+      if (
+        document.getElementById("overallGPA").value == "" ||
+        document.getElementById("last30GPA").value == ""
+      ) {
+        alert(
+          "You must select an item in each drop down and enter a value in the GPA text boxes!"
+        );
+      }
+    }
 
 
         </script>
