@@ -22,14 +22,14 @@
 
 //Focus on the IS201 dropdown
 function focus201() {
-    document.getElementById("IS201grade").focus();
+    document.getElementById("IS201Grade").focus();
 }
 
 
 function resetAll()
 {
     // focusing on IS201
-    document.getElementById("IS201grade").focus();
+    document.getElementById("IS201Grade").focus();
 
     // destroying the circle
     document.getElementById("Circle").style.display = "none";
@@ -58,7 +58,7 @@ function resetAll()
     // this should happen when you press the reset button
 
     // focusing on IS201
-    document.getElementById("IS201grade").focus();
+    document.getElementById("IS201Grade").focus();
 }
 
 
