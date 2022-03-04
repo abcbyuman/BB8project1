@@ -4,7 +4,7 @@
 // drop down and enter a value in the GPA text boxes!" and set the focus to the IS 201 drop down list box.
 
 // Alert to make sure all fields are filled
-function MissingInfoAlert() {
+function checkInfoFields() {
   if (
     document.getElementById("OverallGPA").value == "" ||
     document.getElementById("Last30GPA").value == ""
