@@ -7,7 +7,7 @@
 function MissingInfoAlert() {
   if (
     document.getElementById("OverallGPA").value == "" ||
-    document.getElementById("Last30CreditsGPA").value == ""
+    document.getElementById("Last30GPA").value == ""
   ) {
     alert(
       "You must select an item in each drop down and enter a value in the GPA text boxes!"
