@@ -12,5 +12,6 @@ function checkInfoFields() {
     alert(
       "You must select an item in each drop down and enter a value in the GPA text boxes!"
     );
+    document.getElementById("IS201Grade").autofocus;
   }
 }
