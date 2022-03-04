@@ -246,7 +246,7 @@
                             <br>
 
                           <!-- BUTTON TO CALCULATE GPA -->
-                          <button type="reset" class="btn btn-primary" onclick="calculateGPA();">Calculate</button>
+                          <button type="reset" class="btn btn-primary" onclick="calcGPA();">Calculate</button>
                             <br>
                             <br>
 
@@ -366,14 +366,14 @@
         <script>
             //Mitch's part, the calcGPA function which will be called when the "Calculate" button is pushed
             function calcGPA() {
-        let sIS201Grade = document.getElementById("IS201Grade");
+        let sIS201Grade = document.getElementById("IS201Grade").value;
         let iIS201GPA;
-        let sCS142Grade = document.getElementById("CS142Grade");
+        let sCS142Grade = document.getElementById("CS142Grade").value;
         let iCS142GPA;
-        let sACC200Grade = document.getElementById("ACC200Grade");
+        let sACC200Grade = document.getElementById("ACC200Grade").value;
         let iACC200GPA;
-        let iOverallGPA = parseFloat(document.getElementById("overallGPA"));
-        let iLast30GPA = parseFloat(document.getElementById("last30GPA"));
+        let iOverallGPA = parseFloat(document.getElementById("overallGPA").value);
+        let iLast30GPA = parseFloat(document.getElementById("last30GPA").value);
         let fTotalGPA;
 
         switch (sIS201Grade) {
