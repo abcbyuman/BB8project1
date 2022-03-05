@@ -15,6 +15,6 @@ function checkInfoFields() {
     );
     document.getElementById("calcGPA").value = null;
     document.getElementById("IS201Grade").autofocus;
-    document.getElementById("myCircle").display = "hidden";
+    document.getElementById("myCircle").style.display = "none";
   }
 }

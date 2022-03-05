@@ -658,15 +658,8 @@
         }
 
         fTotalGPA = round(fTotalGPA, 2);
-        document.getElementById('calcGPA').innerHTML=fTotalGPA
-        if (
-        document.getElementById("overallGPA").value == "" ||
-        document.getElementById("last30GPA").value == ""
-      ) {
-        alert(
-          "You must select an item in each drop down and enter a value in the GPA text boxes!"
-        );
-      }
+        document.getElementById("calcGPA").innerHTML=fTotalGPA
+        
                 
       //Changing the circle color: 
       if (fTotalGPA >= 3.7) {
