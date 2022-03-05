@@ -7,12 +7,14 @@
 function checkInfoFields() {
   if (
     // check if fields don't have a value
-    document.getElementById("OverallGPA").value == "" ||
-    document.getElementById("Last30GPA").value == ""
+    document.getElementById("overallGPA").value == "" ||
+    document.getElementById("last30GPA").value == ""
   ) {
     alert(
       "You must select an item in each drop down and enter a value in the GPA text boxes!"
     );
-    document.getElementById("calcGPA").innerHTML = "";
+    document.getElementById("calcGPA").value = null;
+    document.getElementById("IS201Grade").autofocus;
+    document.getElementById("myCircle").display = "hidden";
   }
 }
