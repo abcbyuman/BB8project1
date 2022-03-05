@@ -22,5 +22,6 @@ function checkInfoFields() {
 
     // display nothing in the circle box
     document.getElementById("myCircle").style.display = "none";
+    document.getElementById("myCircle").style.fill = "none";
   }
 }
