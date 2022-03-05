@@ -34,8 +34,8 @@
             // Function to clear the circle
             function clearCircle()
             {
-                document.getElementById("circle").style.display = "none";
-                document.getElementById("circle").style.fill = "none";
+                document.getElementById("myCircle").style.display = "none";
+                document.getElementById("myCircle").style.fill = "none";
             }
 
 
@@ -49,13 +49,13 @@
                 clearCircle();
                 
                 // clear the overall GPA
-                document.getElementById("OverallGPA").value = "";
+                document.getElementById("overallGPA").value = "";
 
                 // clear the last 30 credits GPA
-                document.getElementById("Last30CreditsGPA").value = "";
+                document.getElementById("last30GPA").value = "";
 
                 // clear the output GPA
-                sOutputGPA = "";
+                document.getElementById("calcGPA").value = "";
 
                 // focusing on IS201
                 focus201();
