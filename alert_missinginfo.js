@@ -14,7 +14,7 @@ function checkInfoFields() {
       "You must select an item in each drop down and enter a value in the GPA text boxes!"
     );
     document.getElementById("calcGPA").value = null;
-    document.getElementById("IS201Grade").autofocus;
+    document.getElementById("IS201Grade").focus();
     document.getElementById("myCircle").style.display = "none";
   }
 }
