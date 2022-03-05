@@ -6,12 +6,13 @@
 // Alert to make sure all fields are filled
 function checkInfoFields() {
   if (
+    // check if fields don't have a value
     document.getElementById("OverallGPA").value == "" ||
     document.getElementById("Last30GPA").value == ""
   ) {
     alert(
       "You must select an item in each drop down and enter a value in the GPA text boxes!"
     );
-    document.getElementById("IS201Grade").autofocus;
+    document.getElementById("calcGPA").innerHTML = "";
   }
 }
