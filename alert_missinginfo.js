@@ -13,8 +13,14 @@ function checkInfoFields() {
     alert(
       "You must select an item in each drop down and enter a value in the GPA text boxes!"
     );
+
+    // display nothing in the calculated GPA box
     document.getElementById("calcGPA").style.display = "none";
+
+    // autofocus to the IS201 list
     document.getElementById("IS201Grade").focus();
+
+    // display nothing in the circle box
     document.getElementById("myCircle").style.display = "none";
   }
 }
