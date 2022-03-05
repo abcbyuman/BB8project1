@@ -24,6 +24,48 @@
         <script src="alert_missinginfo.js"></script>
 
         <script>
+            // Function to set focus on the IS201 dropdown
+            function focus201()
+            {
+                document.getElementById("IS201Grade").focus();
+            }
+
+
+            // Function to clear the circle
+            function clearCircle()
+            {
+                document.getElementById("circle").style.display = "none";
+                document.getElementById("circle").style.fill = "none";
+            }
+
+
+            // Function for the Reset Button
+            function resetAll()
+            {
+                // focusing on IS201
+                focus201();
+
+                // clearing the circle
+                clearCircle();
+                
+                // clear the overall GPA
+                document.getElementById("OverallGPA").value = "";
+
+                // clear the last 30 credits GPA
+                document.getElementById("Last30CreditsGPA").value = "";
+
+                // clear the output GPA
+                sOutputGPA = "";
+
+                // focusing on IS201
+                focus201();
+            }
+
+
+
+
+          
+          
           //Mitch's part, the calcGPA function which will be called when the "Calculate" button is pushed
           function calcGPA() {
       let sIS201Grade = document.getElementById("IS201Grade").value;
