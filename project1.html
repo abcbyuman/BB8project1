@@ -75,7 +75,7 @@
                 let sACC200Grade = document.getElementById("ACC200Grade").value;
                 let iACC200GPA;
                 let iOverallGPA = parseFloat(document.getElementById("overallGPA").value);
-                let iLast30GPA = parseFloat(document.getElementById("last30GPA").value);
+                let fLast30GPA = parseFloat(document.getElementById("last30GPA").value);
                 let fTotalGPA;
 
                 switch (sIS201Grade) {
@@ -371,7 +371,7 @@
                     iCS142GPA * 0.3 +
                     iACC200GPA * 0.05 +
                     iOverallGPA * 0.15 +
-                    iLast30GPA * 0.2;
+                    fLast30GPA * 0.2;
 
         function round(value, decimals) {
             return Number(Math.round(value + "e" + decimals) + "e-" + decimals);
