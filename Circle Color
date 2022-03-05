@@ -1,0 +1,15 @@
+<script>
+//Changing the circle color: 
+      if (fTotalGPA >= 3.7) {
+        document.getElementById("myCircle").style.display = "block";                                        
+        document.getElementById("myCircle").style.fill="green";
+    }
+    else if (fTotalGPA >= 3.4) {
+        document.getElementById("myCircle").style.display = "block";                                        
+        document.getElementById("myCircle").style.fill="yellow";
+    }
+    else {
+        document.getElementById("myCircle").style.display = "block";                                        
+        document.getElementById("myCircle").style.fill="red";
+    }
+ </script>
