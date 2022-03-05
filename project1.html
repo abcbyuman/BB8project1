@@ -22,6 +22,338 @@
         <!-- code from me for testing -->
         <script src="reset_button.js"></script>
         <script src="alert_missinginfo.js"></script>
+        <script>
+          //Mitch's part, the calcGPA function which will be called when the "Calculate" button is pushed
+          function calcGPA() {
+      let sIS201Grade = document.getElementById("IS201Grade").value;
+      let iIS201GPA;
+      let sCS142Grade = document.getElementById("CS142Grade").value;
+      let iCS142GPA;
+      let sACC200Grade = document.getElementById("ACC200Grade").value;
+      let iACC200GPA;
+      let iOverallGPA = parseFloat(document.getElementById("overallGPA").value);
+      let iLast30GPA = parseFloat(document.getElementById("last30GPA").value);
+      let fTotalGPA;
+
+      switch (sIS201Grade) {
+        case "A":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 3.7;
+          } else {
+            iIS201GPA = 4;
+          }
+          break;
+
+        case "A-":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 3.4;
+          } else {
+            iIS201GPA = 3.7;
+          }
+          break;
+
+        case "B+":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 3;
+          } else {
+            iIS201GPA = 3.4;
+          }
+          break;
+
+        case "B":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 2.7;
+          } else {
+            iIS201GPA = 3;
+          }
+          break;
+
+        case "B-":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 2.4;
+          } else {
+            iIS201GPA = 2.7;
+          }
+          break;
+
+        case "C+":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 2;
+          } else {
+            iIS201GPA = 2.4;
+          }
+          break;
+
+        case "C":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 1.7;
+          } else {
+            iIS201GPA = 2;
+          }
+          break;
+
+        case "C-":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 1.4;
+          } else {
+            iIS201GPA = 1.7;
+          }
+          break;
+
+        case "D+":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 1;
+          } else {
+            iIS201GPA = 1.4;
+          }
+          break;
+
+        case "D":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 0.7;
+          } else {
+            iIS201GPA = 1;
+          }
+          break;
+
+        case "D-":
+          if (document.getElementById("IS201Retake").checked) {
+            iIS201GPA = 0;
+          } else {
+            iIS201GPA = 0.7;
+          }
+          break;
+
+        case "E":
+          iIS201GPA = 0;
+          break;
+        default:
+          alert("Something is wrong!");
+      }
+
+      switch (sCS142Grade) {
+        case "A":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 3.7;
+          } else {
+            iCS142GPA = 4;
+          }
+          break;
+
+        case "A-":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 3.4;
+          } else {
+            iCS142GPA = 3.7;
+          }
+          break;
+
+        case "B+":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 3;
+          } else {
+            iCS142GPA = 3.4;
+          }
+          break;
+
+        case "B":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 2.7;
+          } else {
+            iCS142GPA = 3;
+          }
+          break;
+
+        case "B-":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 2.4;
+          } else {
+            iCS142GPA = 2.7;
+          }
+          break;
+
+        case "C+":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 2;
+          } else {
+            iCS142GPA = 2.4;
+          }
+          break;
+
+        case "C":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 1.7;
+          } else {
+            iCS142GPA = 2;
+          }
+          break;
+
+        case "C-":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 1.4;
+          } else {
+            iCS142GPA = 1.7;
+          }
+          break;
+
+        case "D+":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 1;
+          } else {
+            iCS142GPA = 1.4;
+          }
+          break;
+
+        case "D":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 0.7;
+          } else {
+            iCS142GPA = 1;
+          }
+          break;
+
+        case "D-":
+          if (document.getElementById("CS142Retake").checked) {
+            iCS142GPA = 0;
+          } else {
+            iCS142GPA = 0.7;
+          }
+          break;
+
+        case "E":
+          iCS142GPA = 0;
+          break;
+        default:
+          alert("Something is wrong!");
+      }
+
+      switch (sACC200Grade) {
+        case "A":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 3.7;
+          } else {
+            iACC200GPA = 4;
+          }
+          break;
+
+        case "A-":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 3.4;
+          } else {
+            iACC200GPA = 3.7;
+          }
+          break;
+
+        case "B+":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 3;
+          } else {
+            iACC200GPA = 3.4;
+          }
+          break;
+
+        case "B":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 2.7;
+          } else {
+            iACC200GPA = 3;
+          }
+          break;
+
+        case "B-":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 2.4;
+          } else {
+            iACC200GPA = 2.7;
+          }
+          break;
+
+        case "C+":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 2;
+          } else {
+            iACC200GPA = 2.4;
+          }
+          break;
+
+        case "C":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 1.7;
+          } else {
+            iACC200GPA = 2;
+          }
+          break;
+
+        case "C-":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 1.4;
+          } else {
+            iACC200GPA = 1.7;
+          }
+          break;
+
+        case "D+":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 1;
+          } else {
+            iACC200GPA = 1.4;
+          }
+          break;
+
+        case "D":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 0.7;
+          } else {
+            iACC200GPA = 1;
+          }
+          break;
+
+        case "D-":
+          if (document.getElementById("ACC200Retake").checked) {
+            iACC200GPA = 0;
+          } else {
+            iACC200GPA = 0.7;
+          }
+          break;
+
+        case "E":
+          iACC200GPA = 0;
+          break;
+        default:
+          alert("Something is wrong!");
+      }
+
+      fTotalGPA =
+        iIS201GPA * 0.3 +
+        iCS142GPA * 0.3 +
+        iACC200GPA * 0.05 +
+        iOverallGPA * 0.15 +
+        iLast30GPA * 0.2;
+
+      function round(value, decimals) {
+        return Number(Math.round(value + "e" + decimals) + "e-" + decimals);
+      }
+
+      fTotalGPA = round(fTotalGPA, 2);
+      document.getElementById("calcGPA").innerHTML=fTotalGPA
+      
+              
+    //Changing the circle color: 
+    if (fTotalGPA >= 3.7) {
+      document.getElementById("myCircle").style.display = "block";                                        
+      document.getElementById("myCircle").style.fill="green";
+    }
+    else if (fTotalGPA >= 3.4) {
+        document.getElementById("myCircle").style.display = "block";                                        
+        document.getElementById("myCircle").style.fill="yellow";
+    }
+    else {
+        document.getElementById("myCircle").style.display = "block";                                        
+        document.getElementById("myCircle").style.fill="red";
+    }
+    }
+    
+      </script>
     </head>
     <body id="page-top" onload="focus201();">
 
@@ -345,337 +677,6 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-        <script>
-            //Mitch's part, the calcGPA function which will be called when the "Calculate" button is pushed
-            function calcGPA() {
-        let sIS201Grade = document.getElementById("IS201Grade").value;
-        let iIS201GPA;
-        let sCS142Grade = document.getElementById("CS142Grade").value;
-        let iCS142GPA;
-        let sACC200Grade = document.getElementById("ACC200Grade").value;
-        let iACC200GPA;
-        let iOverallGPA = parseFloat(document.getElementById("overallGPA").value);
-        let iLast30GPA = parseFloat(document.getElementById("last30GPA").value);
-        let fTotalGPA;
-
-        switch (sIS201Grade) {
-          case "A":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 3.7;
-            } else {
-              iIS201GPA = 4;
-            }
-            break;
-
-          case "A-":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 3.4;
-            } else {
-              iIS201GPA = 3.7;
-            }
-            break;
-
-          case "B+":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 3;
-            } else {
-              iIS201GPA = 3.4;
-            }
-            break;
-
-          case "B":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 2.7;
-            } else {
-              iIS201GPA = 3;
-            }
-            break;
-
-          case "B-":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 2.4;
-            } else {
-              iIS201GPA = 2.7;
-            }
-            break;
-
-          case "C+":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 2;
-            } else {
-              iIS201GPA = 2.4;
-            }
-            break;
-
-          case "C":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 1.7;
-            } else {
-              iIS201GPA = 2;
-            }
-            break;
-
-          case "C-":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 1.4;
-            } else {
-              iIS201GPA = 1.7;
-            }
-            break;
-
-          case "D+":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 1;
-            } else {
-              iIS201GPA = 1.4;
-            }
-            break;
-
-          case "D":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 0.7;
-            } else {
-              iIS201GPA = 1;
-            }
-            break;
-
-          case "D-":
-            if (document.getElementById("IS201Retake").checked) {
-              iIS201GPA = 0;
-            } else {
-              iIS201GPA = 0.7;
-            }
-            break;
-
-          case "E":
-            iIS201GPA = 0;
-            break;
-          default:
-            alert("Something is wrong!");
-        }
-
-        switch (sCS142Grade) {
-          case "A":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 3.7;
-            } else {
-              iCS142GPA = 4;
-            }
-            break;
-
-          case "A-":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 3.4;
-            } else {
-              iCS142GPA = 3.7;
-            }
-            break;
-
-          case "B+":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 3;
-            } else {
-              iCS142GPA = 3.4;
-            }
-            break;
-
-          case "B":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 2.7;
-            } else {
-              iCS142GPA = 3;
-            }
-            break;
-
-          case "B-":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 2.4;
-            } else {
-              iCS142GPA = 2.7;
-            }
-            break;
-
-          case "C+":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 2;
-            } else {
-              iCS142GPA = 2.4;
-            }
-            break;
-
-          case "C":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 1.7;
-            } else {
-              iCS142GPA = 2;
-            }
-            break;
-
-          case "C-":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 1.4;
-            } else {
-              iCS142GPA = 1.7;
-            }
-            break;
-
-          case "D+":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 1;
-            } else {
-              iCS142GPA = 1.4;
-            }
-            break;
-
-          case "D":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 0.7;
-            } else {
-              iCS142GPA = 1;
-            }
-            break;
-
-          case "D-":
-            if (document.getElementById("CS142Retake").checked) {
-              iCS142GPA = 0;
-            } else {
-              iCS142GPA = 0.7;
-            }
-            break;
-
-          case "E":
-            iCS142GPA = 0;
-            break;
-          default:
-            alert("Something is wrong!");
-        }
-
-        switch (sACC200Grade) {
-          case "A":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 3.7;
-            } else {
-              iACC200GPA = 4;
-            }
-            break;
-
-          case "A-":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 3.4;
-            } else {
-              iACC200GPA = 3.7;
-            }
-            break;
-
-          case "B+":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 3;
-            } else {
-              iACC200GPA = 3.4;
-            }
-            break;
-
-          case "B":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 2.7;
-            } else {
-              iACC200GPA = 3;
-            }
-            break;
-
-          case "B-":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 2.4;
-            } else {
-              iACC200GPA = 2.7;
-            }
-            break;
-
-          case "C+":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 2;
-            } else {
-              iACC200GPA = 2.4;
-            }
-            break;
-
-          case "C":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 1.7;
-            } else {
-              iACC200GPA = 2;
-            }
-            break;
-
-          case "C-":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 1.4;
-            } else {
-              iACC200GPA = 1.7;
-            }
-            break;
-
-          case "D+":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 1;
-            } else {
-              iACC200GPA = 1.4;
-            }
-            break;
-
-          case "D":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 0.7;
-            } else {
-              iACC200GPA = 1;
-            }
-            break;
-
-          case "D-":
-            if (document.getElementById("ACC200Retake").checked) {
-              iACC200GPA = 0;
-            } else {
-              iACC200GPA = 0.7;
-            }
-            break;
-
-          case "E":
-            iACC200GPA = 0;
-            break;
-          default:
-            alert("Something is wrong!");
-        }
-
-        fTotalGPA =
-          iIS201GPA * 0.3 +
-          iCS142GPA * 0.3 +
-          iACC200GPA * 0.05 +
-          iOverallGPA * 0.15 +
-          iLast30GPA * 0.2;
-
-        function round(value, decimals) {
-          return Number(Math.round(value + "e" + decimals) + "e-" + decimals);
-        }
-
-        fTotalGPA = round(fTotalGPA, 2);
-        document.getElementById("calcGPA").innerHTML=fTotalGPA
         
-                
-      //Changing the circle color: 
-      if (fTotalGPA >= 3.7) {
-        document.getElementById("myCircle").style.display = "block";                                        
-        document.getElementById("myCircle").style.fill="green";
-      }
-      else if (fTotalGPA >= 3.4) {
-          document.getElementById("myCircle").style.display = "block";                                        
-          document.getElementById("myCircle").style.fill="yellow";
-      }
-      else {
-          document.getElementById("myCircle").style.display = "block";                                        
-          document.getElementById("myCircle").style.fill="red";
-      }
-      }
-      
-        </script>
     </body>
 </html>
