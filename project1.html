@@ -22,6 +22,7 @@
         <!-- code from me for testing -->
         <script src="reset_button.js"></script>
         <script src="alert_missinginfo.js"></script>
+
         <script>
           //Mitch's part, the calcGPA function which will be called when the "Calculate" button is pushed
           function calcGPA() {
@@ -480,7 +481,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
                         
-                        
+                        <!-- IS 201 Dropdown List -->
                           <span class="pCustom">IS 201</span>
                           <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="IS201grade" id="IS201Grade" autofocus>
                             <option>A</option>
@@ -503,6 +504,7 @@
                           <br>
                           <br>
 
+                          <!-- IS303/CS142 Dropdown List -->
                           <span class="pCustom">IS 303/CS 142</span>
                           <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="IS303grade" id="CS142Grade">
                             <option>A</option>
@@ -525,6 +527,7 @@
                           <br>
                           <br>
 
+                          <!-- ACC 200 Dropdown List -->
                           <span class="pCustom">ACC 200</span>
                           <select class="form-check-input" style="width: 70px; margin-top: 5px; height: 40px; font-size: 20px; text-align: center; border-radius: 5px;" name="ACC200grade" id="ACC200Grade">
                             <option>A</option>
@@ -548,6 +551,7 @@
                           <br>
                           <br>
 
+                          <!-- Overall GPA Input Box -->
                           <span class="pCustom">BYU Overall GPA: </span> &nbsp;
                           <input class="form-control" id="overallGPA" name="OverallGPA" placeholder="GPA..." style="height: 50px; width: 115px; float: right; margin-right: 250px; margin-top: -7px;"/>
                           
@@ -555,6 +559,7 @@
                           <br>
                           <br>
 
+                          <!-- Last 30 Credits GPA Input Box -->
                           <span class="pCustom">BYU Last 30 Credits GPA: </span>
                           <input class="form-control" id="last30GPA" name="Last30CreditsGPA" placeholder="GPA..." style="height: 50px; width: 115px; float: right; margin-right: 250px; margin-top: -7px;"/>
                             <br>
@@ -572,13 +577,17 @@
                             <br>
                             <br>
 
+                          <!-- Place for Calculated GPA Output -->
                           <p class="pCustom">Calculated GPA: </p>
                           <div class="center CalcGPAArea">
                             <p id="calcGPA"></p>
                           </div>
+
+                          <!-- Place for Circle Output -->
                           <p class="pCustom">Circle: </p>
                           <div class="center CircleArea">
                             <span id="circle"></span>
+                            
                             <!-- circle code: -->
                             <svg height="100" width="100">
                               <circle
